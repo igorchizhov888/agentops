@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  agentops-oss:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./data:/data
+    environment:
+      - AGENTOPS_STORAGE=sqlite:///data/traces.db
+    ports:
+      - "8000:8000"
+
+volumes:
+  data:
+    driver: local

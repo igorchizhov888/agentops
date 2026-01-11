@@ -1,0 +1,5 @@
+apiVersion: v2
+name: agentops
+description: Enterprise Platform for AI Agent Operations
+version: 1.0.0
+appVersion: "1.0.0"

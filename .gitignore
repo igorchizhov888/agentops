@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Databases
+*.db
+*.db-journal
+
+# Environment
+.env
+*.env
+
+# IDEs
+.vscode/
+.idea/
+
+# Docker
+.docker/
+
+# OS
+.DS_Store

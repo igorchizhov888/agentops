@@ -1,0 +1,29 @@
+replicaCount: 3
+
+image:
+  repository: agentops/api
+  tag: "1.0.0"
+  pullPolicy: IfNotPresent
+
+service:
+  type: LoadBalancer
+  port: 8000
+
+database:
+  type: postgresql
+  host: postgres.default.svc
+  port: 5432
+  name: agentops
+
+redis:
+  enabled: true
+  host: redis.default.svc
+  port: 6379
+
+resources:
+  limits:
+    cpu: 1000m
+    memory: 2Gi
+  requests:
+    cpu: 500m
+    memory: 1Gi
